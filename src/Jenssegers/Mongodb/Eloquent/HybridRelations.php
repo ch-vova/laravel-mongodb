@@ -216,7 +216,7 @@ trait HybridRelations
      * @param  string  $relation
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function belongsToMany($related, $collection = null, $foreignKey = null, $otherKey = null, $relation = null)
+    public function belongsToMany($related, $collection = null, $foreignKey = null, $otherKey = null, $relation = null,$relatedPivotKey = NULL, $parentKey = NULL)
     {
         // If no relationship name was passed, we will pull backtraces to get the
         // name of the calling function. We will use that function name as the
