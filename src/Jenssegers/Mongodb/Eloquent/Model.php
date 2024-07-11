@@ -167,7 +167,7 @@ abstract class Model extends BaseModel
      * @param  mixed  $value
      * @return DateTime
      */
-    protected function asDateTime($value)
+    public function asDateTime($value)
     {
         // Convert MongoDate instances.
         if ($value instanceof MongoDate) {
@@ -182,7 +182,7 @@ abstract class Model extends BaseModel
      *
      * @return string
      */
-    protected function getDateFormat()
+    public function getDateFormat()
     {
         return $this->dateFormat ?: 'Y-m-d H:i:s';
     }
